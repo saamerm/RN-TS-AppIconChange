@@ -1,0 +1,6 @@
+module Pods_ButtonProjects_ButtonProjectsTests {
+  umbrella header "Pods-ButtonProjects-ButtonProjectsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

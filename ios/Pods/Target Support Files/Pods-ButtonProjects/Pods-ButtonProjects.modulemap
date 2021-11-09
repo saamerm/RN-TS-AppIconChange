@@ -1,0 +1,6 @@
+module Pods_ButtonProjects {
+  umbrella header "Pods-ButtonProjects-umbrella.h"
+
+  export *
+  module * { export * }
+}
