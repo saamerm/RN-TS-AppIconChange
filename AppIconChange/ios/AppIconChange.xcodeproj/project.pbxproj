@@ -12,6 +12,10 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		6172F2D35A4C3AA820D92908 /* libPods-AppIconChange.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-AppIconChange.a */; };
+		76007146273BABBA00552B73 /* ChangeIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 76007145273BABBA00552B73 /* ChangeIcon.m */; };
+		7600714A273BAC0600552B73 /* ChangeIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76007149273BAC0600552B73 /* ChangeIcon.swift */; };
+		7600714F273BAEAC00552B73 /* checked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7600714D273BAEAC00552B73 /* checked@2x.png */; };
+		76007152273BB0D300552B73 /* canceled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76007151273BB0D300552B73 /* canceled@2x.png */; };
 		7EF68E3733C33B6898317E18 /* libPods-AppIconChange-AppIconChangeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-AppIconChange-AppIconChangeTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -39,6 +43,11 @@
 		1D0AE47A65C8663E3B452821 /* Pods-AppIconChange-AppIconChangeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppIconChange-AppIconChangeTests.release.xcconfig"; path = "Target Support Files/Pods-AppIconChange-AppIconChangeTests/Pods-AppIconChange-AppIconChangeTests.release.xcconfig"; sourceTree = "<group>"; };
 		6423831EA8574132BED9D8CC /* libPods-AppIconChange.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppIconChange.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C97AB639B58BBB4B15BBE30 /* Pods-AppIconChange-AppIconChangeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppIconChange-AppIconChangeTests.debug.xcconfig"; path = "Target Support Files/Pods-AppIconChange-AppIconChangeTests/Pods-AppIconChange-AppIconChangeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		76007145273BABBA00552B73 /* ChangeIcon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeIcon.m; sourceTree = "<group>"; };
+		76007148273BAC0500552B73 /* AppIconChange-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppIconChange-Bridging-Header.h"; sourceTree = "<group>"; };
+		76007149273BAC0600552B73 /* ChangeIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeIcon.swift; sourceTree = "<group>"; };
+		7600714D273BAEAC00552B73 /* checked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checked@2x.png"; sourceTree = "<group>"; };
+		76007151273BB0D300552B73 /* canceled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "canceled@2x.png"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = AppIconChange/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABFE59519B596E51CEFDCCC0 /* libPods-AppIconChange-AppIconChangeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppIconChange-AppIconChangeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A881CF5CF3F2B244570E2A /* Pods-AppIconChange.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppIconChange.debug.xcconfig"; path = "Target Support Files/Pods-AppIconChange/Pods-AppIconChange.debug.xcconfig"; sourceTree = "<group>"; };
@@ -86,12 +95,16 @@
 		13B07FAE1A68108700A75B9A /* AppIconChange */ = {
 			isa = PBXGroup;
 			children = (
+				7600714C273BAE8900552B73 /* AppIcons */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				76007145273BABBA00552B73 /* ChangeIcon.m */,
+				76007149273BAC0600552B73 /* ChangeIcon.swift */,
+				76007148273BAC0500552B73 /* AppIconChange-Bridging-Header.h */,
 			);
 			name = AppIconChange;
 			sourceTree = "<group>";
@@ -104,6 +117,15 @@
 				ABFE59519B596E51CEFDCCC0 /* libPods-AppIconChange-AppIconChangeTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7600714C273BAE8900552B73 /* AppIcons */ = {
+			isa = PBXGroup;
+			children = (
+				76007151273BB0D300552B73 /* canceled@2x.png */,
+				7600714D273BAEAC00552B73 /* checked@2x.png */,
+			);
+			path = AppIcons;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -245,6 +267,8 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				7600714F273BAEAC00552B73 /* checked@2x.png in Resources */,
+				76007152273BB0D300552B73 /* canceled@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,7 +435,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76007146273BABBA00552B73 /* ChangeIcon.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				7600714A273BAC0600552B73 /* ChangeIcon.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6C97AB639B58BBB4B15BBE30 /* Pods-AppIconChange-AppIconChangeTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -458,6 +485,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1D0AE47A65C8663E3B452821 /* Pods-AppIconChange-AppIconChangeTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = AppIconChangeTests/Info.plist;
@@ -498,6 +526,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = AppIconChange;
+				SWIFT_OBJC_BRIDGING_HEADER = "AppIconChange-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -523,6 +552,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = AppIconChange;
+				SWIFT_OBJC_BRIDGING_HEADER = "AppIconChange-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

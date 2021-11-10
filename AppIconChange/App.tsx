@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  Button,
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -8,6 +9,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+import { changeIcon } from './NativeModules';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -27,6 +29,8 @@ const App = () => {
             backgroundColor: isDarkMode ? '#444444' : '#AAAAAA',
           }}>
             <Text style={styles.sectionTitle}>Hello</Text>
+            <Button title='checked' onPress={() => changeIcon('checked')}/>
+            <Button title='canceled' onPress={() => changeIcon('canceled')}/>
         </View>
       </ScrollView>
     </SafeAreaView>
