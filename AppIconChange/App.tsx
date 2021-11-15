@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   Button,
+  NativeModules,
   SafeAreaView,
   ScrollView,
   StatusBar,
